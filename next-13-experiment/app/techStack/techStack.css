@@ -1,0 +1,31 @@
+.imageOfKevinPage {
+    width: 80vw;
+    height: 100vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    /* top: 80%; */
+    /* background-image: radial-gradient(closest-side, rgba(0, 211, 193, 0.417), rgb(255, 255, 255)); */
+}
+
+.techStackBackground {
+    background-image: radial-gradient(closest-side, rgba(0, 211, 193, 0.417), rgb(255, 255, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageOfKevin {
+    width: 50%;
+}
+
+.skillsBox {
+    width: 50%;
+}
+
+.skillsTitle {
+    width: 33.33vw;
+    text-align: center;
+}

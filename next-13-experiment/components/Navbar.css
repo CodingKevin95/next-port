@@ -1,0 +1,201 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    height: 8%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.257);
+}
+
+.navbarNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    padding: 4px;
+    max-width: 1200px;
+}
+
+.rightMenu {
+    width: 25%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    padding-right: 20%;
+    font-weight: 1000;
+    /* color: red; */
+}
+
+.noClickTabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    padding-right: 20%;
+    color: black;
+}
+  
+.tab{
+    text-decoration: none;
+    /* color: rgb(255, 255, 255); */
+    color: rgba(0, 0, 0, 0.41);
+    /* margin-left: 20%; */
+}
+
+.noClickTab {
+    text-decoration: none;
+    /* color: rgb(255, 255, 255); */
+    color: black;
+    /* margin-left: 20%; */
+}
+
+.hamburgerMenuX {
+    display: none;
+}
+
+.xButton {
+    display: none;
+}
+
+.hamburgerMenu {
+     display: none;
+  }
+
+.hamburgerMenuTabs {
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        backdrop-filter: none;
+        height: 10%;
+    }
+
+    .navbarNav {
+        width: 100%;
+    }
+
+    .hamburgerMenu {
+        display: contents;
+        position: absolute;
+        margin-left: 20%;
+    }
+
+    .hamburgerMenuTabs {
+        display: block;
+    }
+
+    .rightMenu {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: 75vh;
+        justify-content: space-around;
+        align-items: center;
+        backdrop-filter: blur(5px);
+      }
+
+    .xButton {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .x {
+        cursor: pointer;
+    }
+
+    .openMenu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 65%;
+        height: 100vh;
+        padding: 10px;
+        transition: ease-in-out;
+        -webkit-animation: slideIn 1s forwards;
+        -moz-animation: slideIn 1s forwards;
+        animation: slideIn 1s forwards;
+        backdrop-filter: blur(5px);
+    }
+
+    @-webkit-keyframes slideIn {
+        0% {
+          transform: translateX(-900px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @-moz-keyframes slideIn {
+        0% {
+          transform: translateX(-900px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideIn {
+        0% {
+          transform: translateX(-900px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      .closedMenu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        transition: ease-out;
+        -webkit-animation: slideOut 2s backwards;
+        -moz-animation: slideOut 2s backwards;
+        animation: slideOut 2s backwards;
+      }
+
+      @-webkit-keyframes slideOut {
+        100% {
+          transform: translateX(0);
+        }
+        0% {
+            transform: translateX(-900px);
+          }
+      }
+      @-moz-keyframes slideOut {
+        100% {
+          transform: translateX(0);
+        }
+        0% {
+            transform: translateX(-900px);
+          }
+      }
+      @keyframes slideOut {
+        100% {
+          transform: translateX(0);
+        }
+        0% {
+            transform: translateX(-900px);
+          }
+      }
+    }
